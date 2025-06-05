@@ -1,0 +1,80 @@
+/*CONTEUDO*/
+/*define a margem da esquerda para o corpo da página*/
+#main {
+  margin-left: 120px;
+}
+/*margem inferior para imagens*/
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+/*define que a sidebar terá uma largura de 120px e cor a cord de fundo #222 */
+.w3-sidebar {
+  width: 120px;
+  background: #222;
+}
+/*define a fonte para todas as tags listadas abaixo*/
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+/*estilo das imagens dos slides */
+.slides img { 
+  border-radius: 20%;/*bordas arredondadas*/
+  width: 100%;/*largura máxima do container*/
+  max-width: 300px;/*limita largura máxima a 300px*/
+  height: 300px;/*altura fixa de 300px*/
+  display: block;/*remove espaçamento extra em linha*/
+  margin: auto;/*centraliza a imagem horizontalmente*/
+}
+/*espaço inferior nos parágrafos dentro dos slides*/
+.slides p {
+  margin-bottom: 10px;
+}
+/*container preto com layout flex centralizado*/
+.w3-container.w3-black {
+  display: flex;/*usa flexbox*/
+  align-items: center;/*alinha verticalmente ao centro*/
+  justify-content: center;/*alinha horizontalmente ao centro*/
+  min-height: 400px;/*altura mínima de 400px*/
+}
+/*slides dentro do container de exibição usando flexbox*/
+.w3-display-container .slides {
+  display: flex;/*usa flexbox */
+  align-items: center;/*alinha verticalmente ao centro*/
+  justify-content: center;/*alinha horizontalmente ao centro*/
+  flex-wrap: wrap;/*permite quebra de linha dos itens*/
+}
+/*posição do botão à esquerda */
+.w3-display-left {
+  top: 45%;/*posiciona verticalmente no meio da área*/
+  left: 1px;/*afasta o botão da borda esquerda*/
+}
+/*posição do botão à direita*/
+.w3-display-right {
+  top: 45%;/*posiciona verticalmente no meio da área*/
+  right: -40px;/*afasta o botão da borda direita*/
+}
+/*ajustes para telas pequenas (até 600px)*/
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;/*remove margem lateral*/
+  }
+  .slides .w3-half {
+    width: 100%;/*slides ocupam largura total*/
+  }
+  .slides .w3-container.w3-left-align {
+    text-align: center;/*centraliza texto*/
+  }
+  .w3-display-left {
+    top: 60%;/*ajusta posição vertical do botão esquerdo*/
+    left: -30px;/*ajusta posição horizontal do botão esquerdo*/
+  }
+  .w3-display-right {
+    top: 60%;/*ajusta posição vertical do botão direito*/
+    right: -30px;/*ajusta posição horizontal do botão direito*/
+  }
+  .slides img {
+    width: 100%;/*imagens com largura total*/
+    max-width: 200px;/*limita largura máxima a 200px*/
+    height: 190px;/*ajusta altura da imagem*/
+  }
+}

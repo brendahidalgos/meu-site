@@ -1,0 +1,345 @@
+<!DOCTYPE html><!--declaração do tipo de documento-->
+<html lang="pt-br"><!--tag de abertura do elemento raiz-->
+    <head><!--tag de abertura da seção-->
+        <meta charset="UTF-8"><!--define a codificação de caracteres do documento como UTF-8 (é uma codificação universal que suporta a maioria dos caracteres)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--tag para responsividade-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--instrução específica para o navegador Internet Explorer (IE).-->
+        <link rel="stylesheet" href="resset.css"><!--folha de estilo css com o resset para limpar as configurações dos navegadores-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><!--css do w3 diretamente pelo site-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--css do cloud flare diretamente pelo site - icones -->
+        <link rel="stylesheet" href="style.css"><!--folha de estilo css personalizada-->       
+        <title>GEEAD – Técnico em Desenvolvimento de Sistemas</title><!--titulo da página-->
+    </head><!--final da seção-->
+    <body class="w3-black"><!--corpo da página-->
+        <!--menu lateral esquerdo-->
+        <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small"><!--cria uma barra lateral de navegação vertical, com seus itens internos dispostos como blocos e o conteúdo centralizado-->
+            <!--home-->
+            <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p>Home</p>
+            </a><!--leva o usuário à seção #home da página atual, é estilizado como um item de uma barra de navegação W3.CSS, possui um ícone grande de "casa" (do Font Awesome), exibe o texto "Home", tem texto branco por padrão, ao passar o mouse sobre ele, o fundo fica preto e o texto fica ciano-->
+            <!--sobre-->
+            <a href="#sobre" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>Sobre</p>
+            </a><!--leva o usuário à seção #sobre da página atual, é estilizado como um item de uma barra de navegação W3.CSS, possui um ícone grande de "pessoa" (do Font Awesome), exibe o texto "Sobre", tem texto branco por padrão, ao passar o mouse sobre ele, o fundo fica preto e o texto fica ciano-->
+            <!--grade curricular-->
+            <a href="#gradeC" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+                <i class="fa fa-columns w3-xxlarge"></i>
+                <p>Grade Curricular</p>
+            </a><!--leva o usuário à seção #gradeC da página atual, é estilizado como um item de uma barra de navegação W3.CSS, possui um ícone grande de "grade" (do Font Awesome), exibe o texto "Grade Curricular", tem texto branco por padrão, ao passar o mouse sobre ele, o fundo fica preto e o texto fica ciano-->
+            <!--docentes-->
+            <a href="#docentes" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+                <i class="fa fa-address-card w3-xxlarge"></i> 
+                <p>Docentes</p>        
+            </a><!--leva o usuário à seção #docentes da página atual, é estilizado como um item de uma barra de navegação W3.CSS, possui um ícone grande de "cracha" (do Font Awesome), exibe o texto "Docentes", tem texto branco por padrão, ao passar o mouse sobre ele, o fundo fica preto e o texto fica ciano-->
+            <!--mercado de trabalho-->
+            <a href="#mercado" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+                <i class="fa fa-handshake-o w3-xxlarge"></i>
+                <p>Mercado de Trabalho</p>
+            </a><!--leva o usuário à seção #mercado da página atual, é estilizado como um item de uma barra de navegação W3.CSS, possui um ícone grande de "mãos" (do Font Awesome), exibe o texto "Mercado de Trabalho", tem texto branco por padrão, ao passar o mouse sobre ele, o fundo fica preto e o texto fica ciano-->
+            <!--tecnologias-->
+            <a href="#tecnologias" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+                <i class="fa fa-connectdevelop w3-xxlarge"></i>
+                <p>Tecnologias</p>
+            </a><!--leva o usuário à seção #tecnologias da página atual, é estilizado como um item de uma barra de navegação W3.CSS, possui um ícone grande de "conexão" (do Font Awesome), exibe o texto "Tecnologias", tem texto branco por padrão, ao passar o mouse sobre ele, o fundo fica preto e o texto fica ciano-->
+            <!--contato-->
+            <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+                <i class="fa fa-envelope w3-xxlarge"></i>
+                <p>Contato</p>
+            </a><!--leva o usuário à seção #contato da página atual, é estilizado como um item de uma barra de navegação W3.CSS, possui um ícone grande de "envelope" (do Font Awesome), exibe o texto "Contato", tem texto branco por padrão, ao passar o mouse sobre ele, o fundo fica preto e o texto fica ciano-->
+        </nav>
+        <!--menu para telas menores-->
+        <div class="w3-top w3-hide-large w3-hide-medium" >
+            <nav class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+                <a href="#home" class="w3-bar-item w3-button" style="width:25% ">HOME</a>
+                <a href="#sobre" class="w3-bar-item w3-button" style="width:25% ">SOBRE</a>
+                <a href="#tecnologias" class="w3-bar-item w3-button" style="width:27% ">TECNOLOGIAS</a>
+                <a href="#contato" class="w3-bar-item w3-button" style="width:23% ">CONTATO</a>
+            </nav>
+        </div><!--uma barra de navegação horizontal, fixa no topo da tela, com fundo preto e semi-transparente (que fica opaco ao passar o mouse), contendo quatro botões (HOME, SOBRE, TECNOLOGIAS, CONTATO) com texto pequeno, esta barra de navegação é exclusiva para telas pequenas (dispositivos móveis) e ficará oculta em tablets e desktops-->
+        <!--conteúdo da página-->
+        <div class="w3-padding-large" id="main"><!--ajuda a definir o "corpo" principal do seu conteúdo, tornando a sua página mais organizada, acessível e semanticamente correta-->
+            <!--home-->
+            <header class="w3-container w3-padding-32 w3-center " id="home"><!--uma seção de cabeçalho (id="home") que é o ponto de destino para um link "Home".-->
+                <h1><!--titulo com logo em imagem-->
+                    <img src="IMG/logoCab.png" alt="Logo CPS GEEAD SP" class="w3-image" width="50%">
+                </h1>
+                <br><!--linha horizontal-->
+                <h1><!--titulo com logo em imagem-->
+                    <img src="IMG/logoDS.png" alt="Desenvolvimento de Sistemas" class="w3-image" width="90%">
+                </h1>
+            </header><!--fecha cabeçalho-->
+            <!--sobre-->
+            <div class="w3-content  w3-padding-64" id="sobre"><!--seção "Sobre": centraliza o conteúdo, aplica espaçamento vertical (64px acima e abaixo), e define um ID para navegação-->
+                <h2 class="w3-text-cyan">Sobre o Curso</h2><!--título da seção "Sobre o Curso" com texto colorido em ciano (usando classe do W3.CSS) -->
+                <hr style="width:200px" class="w3-opacity"><!--linha horizontal com 200px de largura e opacidade reduzida (usando classe do W3.CSS) -->
+                <ul class="w3-ul w3-hoverable w3-center w3-white"><!--lista não ordenada com estilo W3.CSS: visual limpo (w3-ul), itens com efeito hover (w3-hoverable), texto centralizado (w3-center) e fundo branco (w3-white) -->
+                    <li class="w3-cyan w3-xlarge w3-padding-32">O curso tem como objetivo capacitar o aluno para:</li><!--item de lista com fundo ciano, texto grande e espaçamento interno (usando classes W3.CSS-->
+                    <li class="w3-padding-16">Desenvolver e operar sistemas, aplicações e interfaces gráficas</li><!--item de lista com fundo branco, texto grande e espaçamento interno (usando classes W3.CSS-->
+                    <li class="w3-padding-16">Montar e realizar manutenção em estruturas de banco de dados</li><!--item de lista com fundo branco, texto grande e espaçamento interno (usando classes W3.CSS)-->
+                    <li class="w3-padding-16">Codificar programas e Projetar, implantar e customizar sistemas de aplicações</li><!--item de lista com fundo branco, texto grande e espaçamento interno (usando classes W3.CSS)-->
+                    <li class="w3-padding-16">Selecionar programas de aplicação e sistemas operacionais a partir da avaliação das necessidades do usuário;</li><!--item de lista com fundo branco, texto grande e espaçamento interno (usando classes W3.CSS)-->
+                    <li class="w3-padding-16">Agir de forma a minimizar os riscos inerentes à segurança de informações, relacionando e aplicando soluções adequadas</li><!--item de lista com fundo branco, texto grande e espaçamento interno (usando classes W3.CSS)-->
+                    <li class="w3-padding-16">Identificar oportunidades e tendências no mundo digital</li><!--item de lista com fundo branco, texto grande e espaçamento interno (usando classes W3.CSS)-->
+                </ul><!--fechando a lista-->
+                <div class="w3-row w3-padding-16 w3-section w3-light-grey w3-center"><!--container com layout em linha (row), espaçamento interno, separação visual entre seções e fundo cinza claro, centralizado na página -->
+                    <div class="w3-third w3-section"><!--coluna que ocupa 1/3 da largura da linha (w3-third), com espaçamento vertical entre seções (w3-section) -->
+                        <span class="w3-xlarge">1200+ horas</span><!--texto destacado com fonte extra grande (usando classe W3.CSS) para enfatizar a carga horária do curso -->
+                        <br> Aula<!--quebra de linha seguida de texto descritivo (usado para separar visualmente a legenda do dado acima) -->
+                    </div>
+                    <div class="w3-third w3-section"><!--coluna que ocupa 1/3 da largura da linha (w3-third), com espaçamento vertical entre seções (w3-section) -->
+                        <span class="w3-xlarge">1000+ horas</span><!--texto destacado com fonte extra grande (usando classe W3.CSS) para enfatizar a carga horária do curso -->
+                        <br> Aulas Práticas<!--quebra de linha seguida de texto descritivo (usado para separar visualmente a legenda do dado acima) -->
+                    </div>
+                    <div class="w3-third w3-section"><!--coluna que ocupa 1/3 da largura da linha (w3-third), com espaçamento vertical entre seções (w3-section) -->
+                        <span class="w3-xlarge">Certificado</span><!--texto destacado com fonte extra grande (usando classe W3.CSS) para enfatizar o certificado do curso -->
+                        <br> Reconhecido pelo MEC<!--quebra de linha seguida de texto descritivo (usado para separar visualmente a legenda do dado acima) -->
+                    </div>
+                </div>
+            </div>
+            <!--grade curricular -->
+            <div class=" w3-content w3-padding-64" id="gradeC"><!--seção "gradeC": container centralizado com espaçamento vertical de 64px (usando classes W3.CSS) para organizar conteúdo relacionado à grade curricular -->
+                <h2 class="w3-text-cyan">Grade Curricular</h2><!--título da seção "Grade Curricular" com texto na cor ciano (classe W3.CSS) -->
+                <hr style="width:200px" class="w3-opacity"><!--linha horizontal com largura de 200px e opacidade reduzida para efeito visual suave -->
+                <div class="w3-row w3-row-padding"><!--container em formato de linha com espaçamento interno entre colunas (w3-row-padding) para organizar conteúdo em colunas -->
+                    <div class="w3-third w3-margin-bottom"><!--coluna que ocupa 1/3 da largura da linha, com margem inferior para espaçamento entre elementos -->
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"><!--lista não ordenada com fundo branco, texto centralizado, opacidade reduzida por padrão, e que remove a opacidade ao passar o mouse -->
+                            <li class="w3-cyan w3-xlarge w3-padding-32">1º Módulo</li><!--item de lista com fundo ciano, texto extra grande e espaçamento interno para destacar o título "1º Módulo" -->
+                            <li class="w3-padding-16">Linguagem, Trabalho e Tecnologia</li><!--item de lista com espaçamento interno (padding) para organizar o conteúdo de Linguagem, Trabalho e Tecnologia -->
+                            <li class="w3-padding-16">Programação e Algoritmos</li><!--item de lista com espaçamento interno (padding) para organizar o conteúdo de Programação e Algoritmos -->
+                            <li class="w3-padding-16">Banco de Dados I</li><!--item de lista com espaçamento interno (padding) para organizar o conteúdo de Banco de Dados I -->
+                            <li class="w3-padding-16">Análise e Projeto de Sistemas</li><!--item de lista com espaçamento interno (padding) para organizar o conteúdo de Análise e Projeto de Sistemas-->
+                            <li class="w3-padding-16">Design Digital</li><!--item de lista com espaçamento interno (padding) para organizar o conteúdo de Design Digital -->
+                            <li class="w3-padding-16">Programação Web I</li><!--item de lista com espaçamento interno (padding) para organizar o conteúdo de Programação Web I-->
+                            <li class="w3-padding-16">Fundamentos da Informática</li><!--item de lista com espaçamento interno (padding) para organizar o conteúdo de Fundamentos da Informática -->
+                            <li class="w3-padding-16">Técnicas de Programação</li><!--item de lista com espaçamento interno (padding) para organizar o conteúdo de Técnicas de Programação -->
+                            <li class="w3-padding-16"><!--item de lista com espaçamento interno, destacando o texto "Total" em fonte grande seguido da informação "400/h semestre" em linha abaixo -->
+                                <span class="w3-xlarge">Total</span>
+                                <br>400/h semestre
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w3-third"><!--coluna que ocupa 1/3 da largura da linha para layout em três partes iguais -->
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"><!--lista não ordenada com fundo branco, texto centralizado, opacidade padrão reduzida, que fica totalmente opaca ao passar o mouse -->
+                            <li class="w3-cyan w3-xlarge w3-padding-32">2º Módulo</li><!--item de lista com fundo ciano, texto extra grande e espaçamento interno para destacar o título "2º Módulo" -->
+                            <li class="w3-padding-16">Inglês Instrumental</li><!--item de lista com espaçamento interno para apresentar a disciplina Inglês Instrumental -->
+                            <li class="w3-padding-16">Desenvolvimento de Sistemas</li><!--item de lista com espaçamento interno para apresentar a disciplina Desenvolvimento de Sistemas -->
+                            <li class="w3-padding-16">Banco de Dados II</li><!--item de lista com espaçamento interno para apresentar a disciplina Banco de Dados -->
+                            <li class="w3-padding-16">Internet e Protocolos</li><!--item de lista com espaçamento interno para apresentar a disciplina Internet e Protocolo -->
+                            <li class="w3-padding-16">Programação de Aplicativos Mobile I</li><!--item de lista com espaçamento interno para apresentar a disciplina Programação de Aplicativos Mobile I -->
+                            <li class="w3-padding-16">Programação Web II</li><!--item de lista com espaçamento interno para apresentar a disciplina Programação Web II -->
+                            <li class="w3-padding-16">Planejamento do Trabalho de Conclusão de Curso (TCC)
+                                <br>em Desenvolvimento de Sistemas
+                                <br>
+                            </li><!--item de lista com espaçamento interno, contendo título e subtítulo do conteúdo, separados por quebras de linha -->
+                            <li class="w3-padding-16">
+                                <span class="w3-xlarge">Total</span>
+                                <br>400/h semestre
+                            </li><!--item de lista com espaçamento interno, destacando o texto "Total" em tamanho extra grande, seguido da carga horária semestral -->
+                        </ul>
+                    </div>
+                    <div class="w3-third"><!--coluna que ocupa um terço da largura da linha para layout em três colunas iguais -->
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"><!--lista não ordenada com fundo branco, texto centralizado, opacidade reduzida por padrão e que fica totalmente opaca ao passar o mouse -->
+                            <li class="w3-cyan w3-xlarge w3-padding-32">3º Módulo</li><!--item de lista com fundo ciano, texto extra grande e espaçamento interno para destacar o título "3º Módulo" -->
+                            <li class="w3-padding-16">Segurança de Sistemas de Informação</li><!--item de lista com espaçamento interno para apresentar a disciplina Segurança de Sistemas de Informação -->
+                            <li class="w3-padding-16">Banco de Dados III</li><!--item de lista com espaçamento interno para apresentar a disciplina Banco de Dados II -->
+                            <li class="w3-padding-16">Sistemas Embarcados</li><!--item de lista com espaçamento interno para apresentar a disciplina Sistemas Embarcados -->
+                            <li class="w3-padding-16">Programação de Aplicativos Mobile II</li><!--item de lista com espaçamento interno para apresentar a disciplina Programação de Aplicativos Mobile II -->
+                            <li class="w3-padding-16">Programação Web III</li><!--item de lista com espaçamento interno para apresentar a disciplina Programação Web III -->
+                            <li class="w3-padding-16">Qualidade e Teste de Software</li><!--item de lista com espaçamento interno para apresentar a disciplina Qualidade e Teste de Software-->
+                            <li class="w3-padding-16">Ética e Cidadania Organizacional</li><!--item de lista com espaçamento interno para apresentar a disciplina Ética e Cidadania Organizacional-->
+                            <li class="w3-padding-16">Desenvolvimento do Trabalho de Conclusão de Curso (TCC)</li><!--item de lista com espaçamento interno para apresentar a disciplina Desenvolvimento do Trabalho de Concluisão de Curso (TCC)-->
+                            <li class="w3-padding-16">
+                                <span class="w3-xlarge">Total</span>
+                                <br>400/h semestre
+                            </li><!--item de lista com espaçamento interno, destacando o texto Total em tamanho extra grande, seguido da carga horária do semestre -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- docentes -->            
+            <div class=" w3-content w3-padding-64" id="docentes"><!--seção "gradeC": container centralizado com espaçamento vertical de 64px (usando classes W3.CSS) para organizar conteúdo relacionado à grade curricular -->
+                <h2 class="w3-text-cyan">Docentes</h2><!--título da seção "Grade Curricular" com texto na cor ciano (classe W3.CSS) -->
+                <hr style="width:200px" class="w3-opacity"><!--linha horizontal com largura de 200px e opacidade reduzida para efeito visual suave -->
+                <!--docente1-->
+                <div class="w3-content w3-display-container"><!--w3-content: define uma largura máxima centralizada (responsiva),w3-display-container: permite posicionamento absoluto de elementos filhos (como botões ou legendas)-->
+                    <div class="slides w3-row-padding w3-animate-opacity"><!-- Slides com espaçamento e animação de opacidade -->
+                        <!--imagem1-->
+                        <div class="w3-half w3-container w3-center"><!-- Metade da largura, centralizado e com preenchimento -->
+                            <figure><!--imagem-->
+                                <a href="https://pt.pngtree.com/freepng/playful-cartoon-girl-pointing-to-grab-attention-style-woman-illustration-vector_12901936.html"><!--link da imagem-->
+                                    <img src="IMG/mulher.jpg" alt="Francisca Amendoa Carvalho" class="w3-hover-opacity">
+                                </a>
+                            </figure>
+                        </div>
+                        <!--texto1-->
+                        <div class="w3-half w3-container w3-left-align w3-text-white"><!-- Metade da largura, alinhado à esquerda, texto branco e com preenchimento -->
+                            <h3 class="w3-text-cyan">Francisca Amendoa Carvalho</h3><!--nome-->
+                            <h4><b class="w3-text-cyan">Formação Acadêmica</b></h4><!--formação-->
+                            <p>Graduada em Tecnologia em Processamento de Dados pela Faculdade de São Paulo (1996).<br>
+                                Mestre em Computação pelo Centro Universitário São Luiz (2018).
+                            <h4><b class="w3-text-cyan">Atuação Profissional</b></h4><!--atuação-->
+                            <p>Professora Titular da Faculdade Federal de Educação de Maringá. Experiência na área de Educação.</p>
+                        </div>
+                    </div>
+                    <!--docente2-->
+                    <div class="slides w3-row-padding w3-animate-opacity" style="display:none;"><!-- Slide oculto com espaçamento e animação de opacidade -->
+                        <!--imagem2-->
+                        <div class="w3-half w3-container w3-center"><!-- Metade da largura, centralizado e com preenchimento -->
+                            <figure><!--imagem-->
+                                <a href="https://pt.pngtree.com/freepng/handdrawn-cartoon-man-pointing-to-attract-attention-line-casual-simple-vector_12901942.html"><!--link da imagem-->
+                                    <img src="IMG/homem.png" alt="Marcio Soares" class="w3-hover-opacity">
+                                </a>
+                            </figure>                    
+                        </div>
+                        <!--texto2-->
+                        <div class="w3-half w3-container w3-left-align w3-text-white"><!-- Metade da largura, alinhado à esquerda, texto branco e com preenchimento -->
+                            <h3 class="w3-text-cyan">Marcio Soares</h3><!--nome-->
+                            <h4><b class="w3-text-cyan">Formação Acadêmica</b></h4><!--atuação-->
+                            <p>Graduado em Ciência da Computação pela Universidade Federal de São Carlos (2009).<br>
+                                Mestre em Ciência da Computação pela Universidade Federal de São Carlos (2017).</p>
+                            <h4><b class="w3-text-cyan">Atuação Profissional</b></h4><!--atuação-->
+                            <p>Experiência com Desenvolvimento de Software e Ensino em Cursos Técnicos.</p>
+                        </div>
+                    </div>
+                    <button class="w3-button w3-cyan w3-display-left" onclick="plusDivs(-1)">&#10094;</button><!-- Botão preto à esquerda para slide anterior -->
+                    <button class="w3-button w3-cyan w3-display-right" onclick="plusDivs(1)">&#10095;</button><!-- Botão preto à direita para slide próximo -->
+                </div>
+            </div>
+            
+                <!--ANTIGO DOCENTE
+                <div class="w3-row w3-margin-bottom" style="align-items: center;"><!--linha flexível com margem inferior e alinhamento vertical centralizado dos itens               
+                    <!--coluna da imagem 
+                    <div class="w3-col m4 w3-left"><!--coluna que ocupa 4/12 da largura em telas médias, alinhada à esquerda, contendo uma imagem com efeito de opacidade ao passar o mouse 
+                        <figure class="docente1"><!--figura
+                            <a href="https://pt.pngtree.com/freepng/playful-cartoon-girl-pointing-to-grab-attention-style-woman-illustration-vector_12901936.html"><!--link da imagem
+                                <img src="IMG/mulher.jpg" alt="Docente 1" class="w3-hover-opacity"><!--imagem da docente com efeito de opacidade ao passar o mouse
+                            </a>
+                        </figure>                        
+                    </div>
+                    <!--coluna do texto
+                    <div class="w3-col m8"><!--coluna que ocupa 8/12 da largura em telas médias, contendo informações do docente com títulos em ciano
+                        <h3 class="w3-text-cyan">Francisca Amendoa Carvalho</h3><!--nome do docente destacado em texto ciano para chamar a atenção 
+                        <h4 class="w3-text-cyan">Formação Acadêmica</h4><!--subtítulo Formação Acadêmica com texto em cor ciano para destaque 
+                        <p>Graduada em Tecnologia em Processamento de Dados pela Faculdade de São Paulo (1996).<br>
+                        Mestre em Computação pelo Centro Universitário São Luiz (2018).</p><!--parágrafo detalhando a formação acadêmica do docente, com quebra de linha para separar os graus 
+                        <h4 class="w3-text-cyan">Atuação Profissional</h4><!--subtítulo Atuação Profissional com texto em cor ciano para destaque 
+                        <p>Professora Titular da Faculdade Federal de Educação de Maringá. Experiência na área de Educação.</p>
+                    </div>
+                </div>
+                <!--docente 2 
+                <div class="w3-row w3-margin-bottom" style="align-items: center;"><!--linha (row) com margem inferior e tentativa de alinhamento vertical centralizado dos itens -->          
+                    <!--coluna da imagem 
+                    <div class="w3-col m4 w3-left"><!--coluna que ocupa 4/12 da largura em telas médias, alinhada à esquerda 
+                        <figure class="docente2"><!--figura
+                            <a href="https://pt.pngtree.com/freepng/handdrawn-cartoon-man-pointing-to-attract-attention-line-casual-simple-vector_12901942.html"><!--link da imagem
+                                <img src="IMG/homem.png" alt="Docente 2" class="w3-hover-opacity"><!--imagem do docente 2 com efeito de opacidade ao passar o mouse
+                            </a>      
+                        </figure>                                          
+                    </div>
+                    <!--coluna do texto 
+                    <div class="w3-col m8"><!--coluna que ocupa 8/12 da largura em telas médias para apresentar conteúdo principal 
+                        <h3 class="w3-text-cyan">Marcio Soares</h3><!--nome do docente destacado com texto na cor ciano para chamar atenção 
+                        <h4 class="w3-text-cyan">Formação Acadêmica</h4><!--subtítulo Formação Acadêmica em texto ciano para destacar a seção 
+                        <p>Graduado em Ciência da Computação pela Universidade Federal de São Carlos (2009).<br>
+                        Mestre em Ciência da Computação pela Universidade Federal de São Carlos (2017).</p>
+                        <h4 class="w3-text-cyan">Atuação Profissional</h4><!--subtítulo Atuação Profissional em texto ciano para destacar a seção
+                        <p>Experiência com Desenvolvimento de Software e Ensino em Cursos Técnicos.</p>
+                    </div>
+                </div>
+            </div> FECHANDO ANTIGO DOCENTE-->
+
+            <!--mercado de Trabalho -->
+            <div class="w3-padding-64 w3-content" id="mercado"><!--container com espaçamento vertical grande e conteúdo centralizado, identificando a seção "mercado" -->
+                <h2 class="w3-text-cyan">Mercado de Trabalho</h2><!--título da seção "Mercado de Trabalho" com texto em cor ciano para destaque -->
+                <hr style="width:200px" class="w3-opacity"><!--linha horizontal com largura de 200px e opacidade reduzida para efeito visual suave -->
+
+                <p>Segundo o que informa a Associação Brasileira das Empresas de Software (ABES) em parceria com International Data
+                    Corporation Pesquisa de Mercado e Consultoria Ltda (IDC), em 2016 haverá um crescimento em 3% no mercado
+                    de Tecnologia da Informação no Brasil.</p>
+                <p>Outras Associações e Instituições também discursam sobre o constante crescimento da área da Tecnologia da Informação
+                    (T.I.), como, por exemplo, a Associação Brasileira das Empresas de Tecnologia da Informação e Comunicação
+                    (BRASSCOM), que em uma entrevista realizada pelo Jornal da Globo, foi divulgado pelo presidente da empresa,
+                    Sérgio Sgobbi, que em 2015 a área da Tecnologia da Informação (T.I.) registrou uma alta de mais de 8% em
+                    oportunidades de emprego e a tendência para os demais anos é crescer gradativamente.</p>
+                <p>Além disso, em apresentação ocorrida durante o seminário "Governo e o setor de TI - Garantia de Inovação, Produtividade
+                    e Segurança”, em Brasília, a expectativa era de que no segundo semestre de 2015, o setor de TI tivesse um
+                    crescimento nos investimentos da ordem de 7% a 7,5%, incluindo hardware, software e serviços.</p>
+                <p>Essas informações são baseadas em pesquisa feita pelo International Data Corporation (IDC) no mercado de TI do
+                    Brasil. Esta mesma pesquisa aponta que a Indústria Brasileira de TI permanece em 7º lugar no ranking mundial
+                    e em 1° lugar no Ranking da América Latina em 2015, com um investimento de US$ 2,2 trilhões (crescimento
+                    em 9,2% em relação a 2014), sendo que US$ 14,3 bilhões (crescimento de 8,2%) somente no setor Serviços de
+                    T.I. e US$ 12,3 bilhões (crescimento em 30,2%) no setor de softwares.</p>
+                <p>A pesquisa apresentada também trouxe um mapa do investimento em TI no país, no qual a região Sudeste foi a que
+                    mais teve participação total nos investimentos em hardware, software e serviços, com 60,67%.</p>
+
+                <p>
+                    <h6 class="w3-text-cyan">Fontes de Consulta:</h6><!--título de nível 6 com texto em cor ciano para destacar as fontes de consulta -->
+                    Associação Brasileira das Empresas de Software. Disponível em
+                    <a href="http://www.abessoftware.com.br/">Abessoftware</a>. Acesso em 15 Ago. 2017.<!-- Link para o site "Abessoftware" seguido da data de acesso -->
+                    <br> International Data Corporation. Disponível em<!--referências adicionais com quebras de linha, incluindo links e textos de consulta -->
+                    <a href=" http://br.idclatin.com/">Idclatin</a>. Acesso em 15 Ago. 2017.
+                    <br> CENTRO PAULA SOUZA. Missão, Visão, Objetivos e Diretrizes.
+                </p>
+            </div>
+            <!--tecnologias -->
+            <div class="w3-padding-64 w3-content" id="tecnologias"><!--container com espaçamento interno grande e conteúdo centralizado, identificado pela seção "tecnologias" -->
+                <h2 class="w3-text-cyan">Tecnologias</h2><!--título da seção "Tecnologias" com texto em cor ciano para destaque visual -->
+                <hr style="width:200px" class="w3-opacity"><!--linha horizontal com largura de 200px e opacidade reduzida para um efeito visual suave -->
+
+                <div class="w3-row w3-row-padding"><!--container em forma de linha (row) com espaçamento interno entre colunas -->
+                    <div class="w3-half"><!--coluna que ocupa metade da largura da linha, exibindo três imagens de tecnologias com efeitos de opacidade -->
+                        <img src="IMG/html5.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+                        <img src="IMG/CSS3.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+                        <img src="IMG/php.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+                    </div>
+
+                    <div class="w3-half"><!--coluna que ocupa metade da largura da linha, exibindo três imagens de tecnologias com efeitos de opacidade -->
+                        <img src="IMG/csharp.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+                        <img src="IMG/sql.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+                        <img src="IMG/java.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+                    </div>
+                </div>
+            </div>
+            <!--contato -->
+            <div class="w3-padding-128 w3-content w3-text-grey" id="contato"><!--container com espaçamento interno muito grande, conteúdo centralizado e texto cinza, identificado pela seção "contato" -->
+                <h2 class="w3-text-cyan">Contato</h2><!--título da seção Contato com texto em cor ciano para destaque -->
+                <hr style="width:200px" class="w3-opacity"><!--linha horizontal com largura de 200px e opacidade reduzida para um efeito visual suave -->
+                <div class="w3-section"><!--seção com espaçamento padrão ao redor para separar visualmente o conteúdo -->
+                    <p><!--parágrafo com ícone de localizador (map-marker) seguido do texto São Paulo, Brasil -->
+                        <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> São Paulo, Brasil</p>
+                    <p><!--parágrafo com ícone de telefone seguido do número de contato -->
+                        <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefone: 11 3333-3333</p>
+                    <p><!--parágrafo com ícone de envelope seguido do endereço de email para contato -->
+                        <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ds@cps.sp.gov.br</p>
+                </div>
+                <br>
+                <p>Entre em contato:</p>
+                <form><!--formulário-->
+                    <p><!--formulário com campo de texto para o usuário inserir o nome -->
+                        <input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome">
+                    </p>
+                    <p><!--campo de texto para o usuário inserir o email, obrigatório para envio -->
+                        <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
+                    </p>
+                    <p><!--campo de texto para o usuário inserir o assunto da mensagem, obrigatório para envio -->
+                        <input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required name="Assunto">
+                    </p>
+                    <p><!--campo de texto para o usuário inserir a mensagem, obrigatório para envio -->
+                        <input class="w3-input w3-padding-16" placeholder="Menssagem" required name="Mensagem">
+                    </p>
+                    <br>
+                    <br>
+                    <p><!--botão de envio do formulário com ícone de avião de papel e texto "Enviar mensagem" -->
+                        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                            <i class="fa fa-paper-plane"></i> Enviar mensagem
+                        </button>
+                    </p>
+                </form>
+                <br>
+            </div>
+        </div>
+        <script src="javas.js"></script><!--link do arquivo javascript-->
+    </body>
+</html>
